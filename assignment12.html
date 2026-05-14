@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 12</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Assignment12</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="index.html">Home</a>
+<a href="assignment13.html">Next → Assignment </a>
+</nav>
+
+<div class="container">
+<div class="card">
+<h2>Web Technology Basics</h2>
+<p>HTML - Structure</p>
+<p>CSS - Styling</p>
+<p>JavaScript - Interactivity</p>
+</div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Report</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #6a0dad, #b19cd9);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f3e6ff;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #6a0dad;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2e6ff;
+        }
+
+        .A { color: green; font-weight: bold; }
+        .B { color: blue; font-weight: bold; }
+        .C { color: orange; font-weight: bold; }
+        .F { color: red; font-weight: bold; }
+
+    </style>
+</head>
+
+<body>
+
+<h1>Student Report (XSLT Conditionals)</h1>
+<h2>Student Grade Report</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Marks</th>
+        <th>Grade</th>
+    </tr>
+
+    <tbody id="data"></tbody>
+</table>
+
+<script>
+    const students = [
+        {name: "Pragati Subhash Harne", dept: "Computer Science", marks: 88},
+        {name: "Sanjana Kurle", dept: "AIML", marks: 92},
+        {name: "Samiksha Magdum", dept: "AIML + CSE", marks: 75},
+        {name: "Rohit Patil", dept: "IT", marks: 60},
+        {name: "Neha Joshi", dept: "Computer Science", marks: 45},
+        {name: "Amit Shah", dept: "ECE", marks: 30}
+    ];
+
+    function getGrade(m) {
+        if (m >= 85) return '<span class="A">A</span>';
+        else if (m >= 70) return '<span class="B">B</span>';
+        else if (m >= 50) return '<span class="C">C</span>';
+        else return '<span class="F">Fail</span>';
+    }
+
+    let output = "";
+
+    students.forEach(s => {
+        output += `
+        <tr>
+            <td>${s.name}</td>
+            <td>${s.dept}</td>
+            <td>${s.marks}</td>
+            <td>${getGrade(s.marks)}</td>
+        </tr>`;
+    });
+
+    document.getElementById("data").innerHTML = output;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 7</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Assignment7 </h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="index.html">Home</a>
+<a href="assignment8.html">Next → Assignment 2</a>
+</nav>
+
+<div class="container">
+<div class="card">
+<h2>Web Technology Basics</h2>
+<p>HTML - Structure</p>
+<p>CSS - Styling</p>
+<p>JavaScript - Interactivity</p>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Time Table</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f3f0ff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+        margin: 5px;
+    }
+
+    h1 {
+        color: #5a3ec8;
+    }
+
+    h2, h3 {
+        color: #444;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        background: white;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th {
+        background: linear-gradient(45deg, #6a5acd, #8a2be2);
+        color: white;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    tr:nth-child(even) {
+        background: #f8f6ff;
+    }
+
+    tr:hover {
+        background: #ede9ff;
+        transition: 0.3s;
+    }
+
+    .day {
+        font-weight: bold;
+        color: #5a3ec8;
+    }
+
+    .break {
+        background: #dcd6ff;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1>D. Y. Patil College of Engineering & Technology, Kolhapur</h1>
+<h2>Department of Computer Science & Engineering</h2>
+<h3>Time Table</h3>
+
+<table>
+    <tr>
+        <th>Day / Time</th>
+        <th>9:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th class="break">Break</th>
+        <th>11:15 - 12:15</th>
+        <th>12:15 - 1:15</th>
+        <th class="break">Break</th>
+        <th>2:00 - 3:00</th>
+        <th>3:00 - 4:00</th>
+    </tr>
+
+    <tr>
+        <td class="day">Monday</td>
+        <td colspan="2">Lab Batch (DSL / AOOC / TMPS)</td>
+        <td class="break" rowspan="5">B<br>R<br>E<br>A<br>K</td>
+        <td>AOOC(L)<br>PVK</td>
+        <td>MDM-II(L)<br>NAH</td>
+        <td class="break" rowspan="5">B<br>R<br>E<br>A<br>K</td>
+        <td>DSL(L)<br>AMP</td>
+        <td>-</td>
+    </tr>
+
+    <tr>
+        <td class="day">Tuesday</td>
+        <td colspan="2">Lab Batch (TTI / DSL / AOOC)</td>
+        <td>ATL(L)<br>KAB</td>
+        <td>DSL(L)<br>AMP</td>
+        <td>WD(L)<br>SSKore</td>
+        <td>ENV(L)</td>
+    </tr>
+
+    <tr>
+        <td class="day">Wednesday</td>
+        <td colspan="2">Lab Batch</td>
+        <td>AOOC(L)</td>
+        <td>MDM-II(L)</td>
+        <td>DSL(L)</td>
+        <td>ENV(L)</td>
+    </tr>
+
+    <tr>
+        <td class="day">Thursday</td>
+        <td colspan="2">Lab Batch</td>
+        <td>ATL(L)</td>
+        <td>ATL(L)</td>
+        <td>--</td>
+        <td>OE/CC(L)</td>
+    </tr>
+
+    <tr>
+        <td class="day">Friday</td>
+        <td colspan="2">Lab Batch</td>
+        <td colspan="2">TMPS(L)</td>
+        <td>OE/CC(L)</td>
+        <td>-</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 6</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Assignment6 </h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="index.html">Home</a>
+<a href="assignment7.html">Next → Assignment 2</a>
+</nav>
+
+<div class="container">
+<div class="card">
+<h2>Web Technology Basics</h2>
+<p>HTML - Structure</p>
+<p>CSS - Styling</p>
+<p>JavaScript - Interactivity</p>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 260px;
+        background: linear-gradient(180deg, #2b6cb0, #1e4f8a);
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Main Content */
+    .main {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #2b6cb0;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Button */
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: #0077b5;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #005582;
+        transform: scale(1.05);
+    }
+
+    /* Stylish List */
+    .projects {
+        margin-top: 30px;
+    }
+
+    .projects h2 {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        background: #f7f9fc;
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: all 0.3s ease;
+        border-left: 5px solid #2b6cb0;
+    }
+
+    ul li:hover {
+        transform: translateX(10px);
+        background: #e6f0ff;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .title {
+        font-weight: bold;
+        color: #2b6cb0;
+    }
+
+    .desc {
+        color: #555;
+        font-size: 14px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <strong>Name:</strong> Pragati Subhash Harne<br><br>
+        <strong>Roll No:</strong> 51
+    </div>
+
+    <div class="main">
+        <div class="card">
+
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a web developer passionate about building clean and modern websites.</p>
+
+            <!-- LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/pragati-harne-97842832b" target="_blank" class="btn">
+                🔗 Connect on LinkedIn
+            </a>
+
+            <div class="projects">
+                <h2>My Projects</h2>
+
+                <ul>
+                    <li>
+                        <span class="icon">💻</span>
+                        <div>
+                            <div class="title">Web Application</div>
+                            <div class="desc">A task management tool built with React.</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="icon">🛒</span>
+                        <div>
+                            <div class="title">E-commerce Site</div>
+                            <div class="desc">A fully responsive online shopping platform.</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="icon">🌐</span>
+                        <div>
+                            <div class="title">Portfolio Website</div>
+                            <div class="desc">The page you are currently viewing.</div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
